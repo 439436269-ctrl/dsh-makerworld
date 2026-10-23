@@ -24,10 +24,7 @@
 ## 安装
 
 ```bash
-# 从 npm（发布后）
-dsh plugin --profile web add dsh-makerworld
-
-# 直接从 GitHub
+# 直接从 GitHub（推荐；npm 尚未发布）
 dsh plugin --profile web add github:439436269-ctrl/dsh-makerworld
 
 # 本地开发
