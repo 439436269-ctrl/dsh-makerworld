@@ -1,0 +1,1 @@
+{ "displayName": "MakerWorld Publish", "brief": "Full browser-automation flow for publishing models and print profiles to MakerWorld, incl. Cloudflare window consent and playwright-cli gotchas" }

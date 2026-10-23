@@ -1,0 +1,59 @@
+{
+  "name": "dsh-makerworld",
+  "version": "0.1.0",
+  "description": "MakerWorld 出货流水线 skill 包：把「设计 → 校核 → 文案 → 渲染 → 发布模型 → 加打印配置」这条 3D 打印上架流水线（1 编排 + 5 原子）内置进 DeepSeek Harness，装完即出现在 agent 的技能目录里。Bundled skill pack for DSH: a MakerWorld publishing pipeline (orchestration plus atomic skills) shipped inside the plugin and served through a built-in skill provider.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "skill",
+    "skills",
+    "makerworld",
+    "3d-printing",
+    "blender",
+    "stl",
+    "bambu",
+    "petg"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "skills/**",
+    "agent-mode/**",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node test/provider.test.mjs",
+    "check": "node --check lib/index.js && node --check lib/provider.js && node --check lib/frontmatter.js"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "vfvrpq",
+    "url": "https://github.com/439436269-ctrl"
+  },
+  "homepage": "https://github.com/439436269-ctrl/dsh-makerworld",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/439436269-ctrl/dsh-makerworld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/439436269-ctrl/dsh-makerworld/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

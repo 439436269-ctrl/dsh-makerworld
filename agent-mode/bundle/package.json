@@ -1,0 +1,14 @@
+{
+  "name": "dsh-agent-mode-makerworld",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH agent preset: MakerWorld 3D 打印『开发 → 发布 → 加打印配置』多子代理流水线",
+  "type": "module",
+  "dsh": {
+    "bundle": {
+      "patch": [
+        "./cordis.patch.yml"
+      ]
+    }
+  }
+}

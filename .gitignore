@@ -1,0 +1,9 @@
+﻿node_modules/
+__pycache__/
+*.pyc
+*.log
+*.bak
+*.bak-*
+.DS_Store
+out/
+.playwright-cli/
