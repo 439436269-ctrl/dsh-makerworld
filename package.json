@@ -1,6 +1,6 @@
 {
   "name": "dsh-makerworld",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MakerWorld 出货流水线 skill 包：把「设计 → 校核 → 文案 → 渲染 → 发布模型 → 加打印配置」这条 3D 打印上架流水线（1 编排 + 5 原子）内置进 DeepSeek Harness，装完即出现在 agent 的技能目录里。Bundled skill pack for DSH: a MakerWorld publishing pipeline (orchestration plus atomic skills) shipped inside the plugin and served through a built-in skill provider.",
   "keywords": [
     "dsh",
@@ -34,6 +34,12 @@
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.2": "compatible",
+        "0.2.2-rc.1": "compatible"
+      }
     }
   },
   "scripts": {
